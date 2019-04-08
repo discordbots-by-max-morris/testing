@@ -493,7 +493,7 @@ setInterval(() => {
   fs.unlinkSync('./db.lock');
 }, ms('30s'));
 
-client.login("NTUxNTg5MTU0MTY1NjIwNzYx.XKgJCQ.Yu7lPLxpQ4icNpNGt3Gpf4QLdlE").catch(console.error);
+client.login(process.env.BOT_TOKEN).catch(console.error);
 
 process.on('unhandledRejection', err => {
   console.error(`Uncaught Promise Error: \n${err.stack}`);
