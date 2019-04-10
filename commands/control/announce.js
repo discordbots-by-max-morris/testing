@@ -28,8 +28,8 @@ module.exports = class AnnounceCommand extends Command {
   }
 
   async run(message, args) {
-    const annChan = this.client.channels.get('282977399761666059');
-    const annRole = message.guild.roles.get('338046233765478401');
+    const annChan = this.client.channels.get('556358302620188673');
+    const annRole = message.guild.roles.get('<@&565395361963966465>');
     annRole.setMentionable(true);
     const embed = new RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
