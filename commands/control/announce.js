@@ -38,6 +38,5 @@ module.exports = class AnnounceCommand extends Command {
     annChan.send('<@&338046233765478401>', { embed }).then(() => {
       message.reply('Announcement sent!');
     });
-    annRole.setMentionable(true);
   }
 };
